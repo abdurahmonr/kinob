@@ -216,16 +216,11 @@ def progress_bar(value, max_value=10, length=10):
 # ============================================================
 def main_menu_kb(is_adm):
     kb = [
-        [InlineKeyboardButton("🔍 Qidirish", callback_data="search"),
-         InlineKeyboardButton("🎲 Tasodifiy", callback_data="random")],
-        [InlineKeyboardButton("🎭 Janrlar", callback_data="genres"),
+        [InlineKeyboardButton("🎲 Tasodifiy", callback_data="random"),
          InlineKeyboardButton("⭐ Top kinolar", callback_data="top")],
-        [InlineKeyboardButton("📈 Yangi kinolar", callback_data="new"),
-         InlineKeyboardButton("💡 Tavsiyalar", callback_data="recommend")],
         [InlineKeyboardButton("❤️ Sevimlilarim", callback_data="favorites"),
-         InlineKeyboardButton("📜 Tariximi", callback_data="history")],
-        [InlineKeyboardButton("👤 Profilim", callback_data="profile"),
-         InlineKeyboardButton("ℹ️ Yordam", callback_data="help")],
+         InlineKeyboardButton("📜 Tarixim", callback_data="history")],
+        [InlineKeyboardButton("ℹ️ Yordam", callback_data="help")],
     ]
     if is_adm:
         kb.append([InlineKeyboardButton("👑 Admin Panel", callback_data="admin_panel")])
